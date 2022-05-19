@@ -1,0 +1,61 @@
+@use "./scss/mixins.scss" as *;
+
+.footer{
+    background-color: #212A2F;
+    position: relative;
+}
+
+.columns{
+    display: flex;
+    color: #fff;
+    gap: 206px;
+    padding-top: 72px;
+    margin-left: 54px;
+    &-column{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        & p{
+            @include footFontsBig;
+        }
+        & a{
+            @include footFontsMin;
+        }
+    }
+}
+
+.follow{
+    color: #fff;
+    padding-top: 85px;
+    margin-left: 54px;
+    max-width: 293px;
+    & :nth-child(1){
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        padding-bottom: 21px;
+    }
+    & :nth-child(2){
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 0.5px;
+        padding-bottom: 126px;
+    }
+}
+
+.flags{
+    display: flex;
+    position: absolute;
+    top: 566px;
+    right: 195px;
+    gap: 24px;
+}
+
+.last{
+    color: #fff;
+    text-align: center;
+    padding-bottom: 90px;
+}

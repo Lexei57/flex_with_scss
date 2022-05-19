@@ -1,0 +1,26 @@
+@use "./scss/mixins.scss" as *;
+
+.woods{
+    &-img{
+        @include backImage(url("../pictures/wood.png"));
+        width: 100%;
+        height: 542px;
+    }
+}
+
+.under_sneakers{
+    padding-bottom: 26px;
+}
+
+.under_wood-buttons{
+    padding-bottom: 119px;
+
+    & button{
+        @include shopFonts;
+        @include btnShop;
+        width: 384px;
+        margin-left: calc(50% - 192px);
+        background-color: #212a2f;
+        color: #fff;
+    }
+}

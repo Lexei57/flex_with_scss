@@ -1,0 +1,48 @@
+@use "./scss/mixins.scss" as *;
+
+.choice-collection{
+    @include backImage(url("../pictures/runners.png"));
+    width: 100%;
+    height: 740px;
+    position: relative;
+}
+
+.trail{
+    position: absolute;
+    left: 54px;
+    top: 504px;
+}
+
+.text1{
+    font-style: normal;
+    font-weight: 700;
+     font-size: 48px;
+    line-height: 63px;
+    letter-spacing: 0.5px;
+    color: #ffffff;
+}
+
+.text2{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    color: #ffffff;
+
+}
+
+.shop{
+    display: flex;
+    padding-top: 24px;
+    & :first-child{
+        margin-right: 24px
+    }
+}
+.gender {
+    & button{
+        @include shopFonts();
+        @include btnShop(); 
+    }
+}
+

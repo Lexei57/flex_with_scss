@@ -1,0 +1,64 @@
+@mixin navFonts(){
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 21px;
+    letter-spacing: 1.7px;
+    text-transform: uppercase;
+}
+
+@mixin shopFonts(){
+    color: #212A2F;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+@mixin cardsFonts(){
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 29px;
+    letter-spacing: 0.5px;
+    color: #212A2F;
+    border-bottom: 1px solid #D3D4D5;
+}
+
+@mixin footFontsMin(){
+    color: #fff;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+}
+
+@mixin footFontsBig(){
+    color: #fff;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+
+@mixin backImage($bi){
+    background-image: $bi;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@mixin btnShop(){
+    width: 180px;
+    height: 48px;
+    border-radius: 2px;
+    border: none;
+    cursor: pointer;
+}
+

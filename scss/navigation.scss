@@ -1,0 +1,53 @@
+@use "./scss/mixins.scss" as *;
+
+.nav a{
+    text-decoration: none;
+    color: #212A2F;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 21px;
+    @include navFonts();
+}
+
+.collections{
+    display: flex;
+    text-align: center;
+}
+
+.collections a{
+    padding-left: 36px;
+}
+
+.profile{
+    display: flex;
+    text-align: center;
+    padding-right: 22px;
+}
+
+.cart a{
+    padding-left: 39px;
+}
+
+.pic{
+    display: flex;
+    margin-top: -4px;
+    padding-bottom: 5px;
+
+}
+
+.pic a {
+    padding-left: 22px;
+}
+
+.navigation{
+    position: relative;
+}
+
+.logotype{
+    position: absolute;
+    top: 11px;
+    left: calc(50% - 60px);
+}

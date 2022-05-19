@@ -1,0 +1,67 @@
+@use "./scss/mixins.scss" as *;
+
+.signUp{
+    &-wrapper{
+        max-width: 823px;
+        margin-left: calc(50% - 411.5px);
+        & :nth-child(1){
+            text-align: center;
+            padding-bottom: 34px;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 42px;
+            letter-spacing: 0.5px;
+            color: #212A2F;
+        }
+        & :nth-child(2){
+            padding-bottom: 50px;
+            text-align: center;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.5px;
+            color: #212A2F;
+
+        }
+    }
+}
+
+.signUp_form{
+    margin-left: calc(48% - 316px);
+}
+
+.form{
+    & input{
+        width: 588px;
+        height: 48px;
+        border: none;
+        border-bottom: 2px solid black;
+        outline: none;
+        padding-left: 50px;
+        color: rgba(0, 0, 0, 0.22);
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 14px;
+    }
+    & button{
+        @include btnShop;
+        @include shopFonts;
+        background-color: #212A2F;
+        color: #fff;
+        width: 111px;
+        margin-left: 12px;
+    }
+    & p{
+        padding-top: 24px;
+        padding-bottom: 48px;
+        padding-left: 100px;
+        color: #74797C;
+    }
+}
+
+.email:hover{
+    font-weight: 600;
+}
+

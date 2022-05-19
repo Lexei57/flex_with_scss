@@ -1,0 +1,101 @@
+@use "./scss/mixins.scss" as *;
+
+.style{
+    padding-top: 119px;
+    & p{
+        padding-left: calc(50% - 105px);
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 42px;
+        letter-spacing: 0.5px;
+        color: #212A2F;
+    }
+}
+
+.nameSlider{
+    padding-top: 32px;
+    display: flex;
+    max-width: 526px;
+    justify-content: space-between;
+    margin-left: calc(50% - 263px);
+}
+
+.name button{
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 2px;
+    color: #212A2F;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+// Кейс для слайдера
+.slider{
+    width: 1236px;
+    position: relative;
+    margin-left: calc(50% - 618px);
+    &-line{
+        border: 2px solid #D3D4D5;
+        background-color: #D3D4D5;
+    }
+    &-control{
+        position: absolute;
+        border: 2px solid #000000;
+        background-color: #000000;
+        padding: 0;
+        background-color: none;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 25.7%;
+        width: 161px;
+    }
+}
+
+// Начало карточек
+.cards{
+    display: flex;
+    padding-top: 34px;
+    padding-bottom: 142px;
+    margin-left: calc(50% - 618px);
+    gap: 24px;
+    &-items{
+        position: relative;
+    }
+    &-gender{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        gap: 12px;
+        top: 144px;
+        left: 60px;
+        & button{
+            width: 276px;
+            height: 48px;
+            background-color: #ffffff;
+            border: none;
+            border-radius: 2px;
+            @include shopFonts();
+            cursor: pointer;
+        }
+    }
+        &-discription-text{
+            @include cardsFonts();
+            padding-bottom: 10px;
+            margin-left: 42px;
+            max-width: 320px;
+        }
+        &-discription-emblem{
+            display: flex;
+            align-items: center;
+            margin-left: 42px;
+            padding-top: 16px;
+            gap: 12px;
+        }
+    }
+// Конец карточек
+
