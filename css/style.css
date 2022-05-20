@@ -68,6 +68,10 @@ body {
 }
 
 .choice-collection {
+  background-image: url("../pictures/runners.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   background-color: rgba(225, 174, 92, 0.5098039216);
   width: 100%;
   height: 740px;
