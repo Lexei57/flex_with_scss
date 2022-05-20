@@ -42,8 +42,10 @@
 }
 .gender {
     & button{
+        @include btnHover;
         @include shopFonts();
-        @include btnShop(); 
+        @include btnShop();
+        @include btnHover(); 
     }
 }
 

@@ -80,6 +80,7 @@
             border: none;
             border-radius: 2px;
             @include shopFonts();
+            @include btnHover;
             cursor: pointer;
         }
     }

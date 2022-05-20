@@ -62,3 +62,21 @@
     cursor: pointer;
 }
 
+// задает анимацию прозрачности для кнопки
+@mixin btnHover(){
+    transition: 0.5s;
+    &:hover{
+        opacity: 0.8;
+        transform: scale(1.1);
+
+    }
+}
+
+// задает анимацию движения в одну из сторон для слайдера
+@mixin slider($X){
+    transition: 1s;
+    &:hover{
+        transform: translateX($X);
+    }
+}
+

@@ -46,6 +46,7 @@
         line-height: 14px;
     }
     & button{
+        @include btnHover;
         @include btnShop;
         @include shopFonts;
         background-color: #212A2F;

@@ -111,6 +111,7 @@ body {
 }
 
 .gender button {
+  transition: 0.5s;
   color: #212A2F;
   font-style: normal;
   font-weight: 700;
@@ -124,6 +125,15 @@ body {
   border-radius: 2px;
   border: none;
   cursor: pointer;
+  transition: 0.5s;
+}
+.gender button:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
+}
+.gender button:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
 }
 
 .style {
@@ -213,7 +223,12 @@ body {
   text-align: center;
   letter-spacing: 2px;
   text-transform: uppercase;
+  transition: 0.5s;
   cursor: pointer;
+}
+.cards-gender button:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
 }
 .cards-discription-text {
   font-style: normal;
@@ -276,6 +291,7 @@ body {
   padding-bottom: 119px;
 }
 .under_sneakers-buttons button {
+  transition: 0.5s;
   color: #212A2F;
   font-style: normal;
   font-weight: 700;
@@ -291,6 +307,10 @@ body {
   cursor: pointer;
   background-color: #212A2F;
   color: #fff;
+}
+.under_sneakers-buttons button:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
 }
 
 .slider_cards {
@@ -342,9 +362,13 @@ body {
   transform: translateX(-80%);
 }
 .left button {
+  transition: 1s;
   background: none;
   border: none;
   cursor: pointer;
+}
+.left button:hover {
+  transform: translateX(-10px);
 }
 
 .right {
@@ -355,9 +379,13 @@ body {
   transform: translateX(80%);
 }
 .right button {
+  transition: 1s;
   background: none;
   border: none;
   cursor: pointer;
+}
+.right button:hover {
+  transform: translateX(10px);
 }
 
 .woods-img {
@@ -377,6 +405,7 @@ body {
   padding-bottom: 119px;
 }
 .under_wood-buttons button {
+  transition: 0.5s;
   color: #212A2F;
   font-style: normal;
   font-weight: 700;
@@ -394,6 +423,10 @@ body {
   margin-left: calc(50% - 192px);
   background-color: #212a2f;
   color: #fff;
+}
+.under_wood-buttons button:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
 }
 
 .other-img {
@@ -447,6 +480,7 @@ body {
   line-height: 14px;
 }
 .form button {
+  transition: 0.5s;
   width: 180px;
   height: 48px;
   border-radius: 2px;
@@ -464,6 +498,10 @@ body {
   color: #fff;
   width: 111px;
   margin-left: 12px;
+}
+.form button:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
 }
 .form p {
   padding-top: 24px;
