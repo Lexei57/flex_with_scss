@@ -3,6 +3,7 @@
 .orange_sneakers{
     &-img{
         @include backImage(url("../pictures/orange-sneakers.png"));
+        background-color: rgba(242, 139, 71, 0.575);
         width: 100%;
         height: 542px;
     }
